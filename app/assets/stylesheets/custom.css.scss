@@ -1,2 +1,54 @@
+$navbar-default-bg: black;
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7 em;
+  color: #800080;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  
+  
+}
+
+.center {
+  text-align: center;
+  
+  
+}
+
+#logo:hover {
+    
+  color: #fff;
+  text-decoration: none;
+  
+  
+}
+
+.jumbotron {
+  
+  background-image: asset-url('flowers.jpg');
+  background-size: cover;
+  height: 550px;
+  
+}
+
+.jumbotron h1 {
+  
+  color: #fff;
+  text-align: center;
+  margin-bottom: 35px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  
+  font-size: 1.7em;
+  background-color: blue;
+  
+}
