@@ -52,3 +52,37 @@ $navbar-default-bg: black;
   background-color: blue;
   
 }
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #green;
+  color: green;
+  
+  
+}
+
+footer a:hover {
+  color: orange;
+  
+}
+
+footer small {
+  float: left;
+  
+  
+}
+
+
+footer ul {
+  
+  float: right;
+  list-style: none;
+}
+
+
+footer ul li {
+  float: left;
+  margin-left: 20px;
+  
+}
