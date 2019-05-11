@@ -24,15 +24,15 @@ end
 
 def create
 
-@user = User.new(user_params)
+@article = Article.new(article_params)
 
-if @user.save
+@article.user = current_user
 
-session[:user_id] = @user.id
+if @article.save
 
-flash[:success] = "Welcome to the Jeff's Poetry #{@user.username}"
+flash[:success] = "Article was successfully created"
 
-redirect_to user_path(@user)
+redirect_to article_path(@article)
 
 else
 
@@ -88,7 +88,7 @@ end
 
 def require_same_user
 
-if current_user != @article.user
+if current_user != @article.user and !current_user.admin?
 
 flash[:danger] = "You can only edit or delete your own articles"
 
