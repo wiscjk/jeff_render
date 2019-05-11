@@ -24,15 +24,15 @@ end
 
 def create
 
-@article = Article.new(article_params)
+@user = User.new(user_params)
 
-@article.user = current_user
+if @user.save
 
-if @article.save
+session[:user_id] = @user.id
 
-flash[:success] = "Article was successfully created"
+flash[:success] = "Welcome to the Jeff's Poetry #{@user.username}"
 
-redirect_to article_path(@article)
+redirect_to user_path(@user)
 
 else
 
