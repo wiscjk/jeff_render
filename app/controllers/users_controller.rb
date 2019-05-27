@@ -26,7 +26,7 @@ if @user.save
 
 session[:user_id] = @user.id
 
-flash[:success] = "Welcome to the alpha blog #{@user.username}"
+flash[:success] = "Welcome to Jeff's Poetry #{@user.username}"
 
 redirect_to user_path(@user)
 
