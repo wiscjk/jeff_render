@@ -15,3 +15,16 @@
 /log/*
 !/log/.keep
 /tmp
+
+Use gemsets to avoid accidentally changing ruby versions, but for now use the command:
+
+rvm use 2.7.4 --default
+https://rvm.io/gemsets/creating
+
+in the project, you will need to create a yes gitignore file
+
+.ruby-gemset ->
+cool_project #project_name
+
+.ruby-version ->
+2.7.4
