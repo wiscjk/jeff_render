@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem file: ruby "2.4.4"
+gem file: ruby "2.4.5"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.10'
 # Use sqlite3 as the database for Active Record
