@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby "3.1.2"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.10', group: :production
+gem 'rails', '4.2.10', group: :production
 # Use sqlite3 as the database for Active Record
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.0.7'
