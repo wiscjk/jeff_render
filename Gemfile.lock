@@ -220,6 +220,7 @@ DEPENDENCIES
   bcrypt
   bootstrap-sass
   bootstrap-will_paginate
+  bundler (>= 1.5.0)
   byebug
   coffee-rails
   jbuilder
